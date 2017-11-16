@@ -68,7 +68,7 @@ function removeFromCart(name) {
     if(name === item){
       cart.splice(i,1);
     }
-    
+
   }
   console.log(cart);
 }
