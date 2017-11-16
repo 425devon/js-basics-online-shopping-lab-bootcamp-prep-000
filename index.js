@@ -54,7 +54,7 @@ function total() {
   for(var i = 0; i < cart.length; i++){
     var currentObj = cart[i];
     var key = Object.keys(currentObj)[0];
-    
+
     total += currentObj[key];
   }
   return total;
