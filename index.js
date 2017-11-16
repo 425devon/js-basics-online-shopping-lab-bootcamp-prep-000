@@ -36,7 +36,7 @@ function viewCart() {
       cartDescription += `${item} at ${price}`;
     }
   }
-  return cartDescription + ".";
+  console.log(cartDescription + ".");
 
 }
 
