@@ -37,9 +37,9 @@ function viewCart() {
     }
   }
   return cartDescription + "."
-
-}
 */
+}
+
 
 function total() {
   // write your code here
