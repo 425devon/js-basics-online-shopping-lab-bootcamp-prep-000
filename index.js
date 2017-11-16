@@ -21,7 +21,7 @@ function addToCart(item) {
 function viewCart() {
   var cartDescription = console.log('In your cart, you have ');
   if(cart.length === 0){
-    console.log('Your shopping cart is empty.');
+    return cartDescription;
 /*  }else{
     for(var i = 0; i < cart.length; i++){
       var currentItemAndPrice = cart[i];
