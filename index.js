@@ -30,7 +30,7 @@ function viewCart() {
       // Handle commas & ands
       if(i && i < cart.length - 1) {
         cartDescription += ', '
-        console.log(cartDescription;)
+        console.log(cartDescription)
       } else if( i == cart.length - 1){
         cartDescription += ' and '
       }
