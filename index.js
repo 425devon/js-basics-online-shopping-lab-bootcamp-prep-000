@@ -33,7 +33,7 @@ function viewCart() {
       } else if( i == cart.length - 1){
         cartDescription += ' and ';
       }
-      cartDescription += `${item} at ${price}`;
+      cartDescription += `${item} at $${price}`;
     }
   }
   console.log(cartDescription + ".");
