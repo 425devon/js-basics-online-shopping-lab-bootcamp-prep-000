@@ -19,7 +19,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var cartDescription = 'In your cart, you have ';
+  var cartDescription = 'In your cart, you have';
   if(cart.length === 0){
     console.log('Your shopping cart is empty.');
   }else{
@@ -28,9 +28,9 @@ function viewCart() {
       var item = Object.keys(currentItemAndPrice)[0];
       var price = currentItemAndPrice[item];
       // Handle commas & ands
-      if(i && i < cart.length - 1) {
+      if(i < cart.length - 1) {
         cartDescription += ', ';
-      } else if( i == cart.length - 1){
+      } else if( i < cart.length){
         cartDescription += ' and ';
       }
       cartDescription += `${item} at $${price}`;
@@ -38,7 +38,7 @@ function viewCart() {
   }
   console.log(cartDescription + ".");
 
-}
+};
 
 
 
