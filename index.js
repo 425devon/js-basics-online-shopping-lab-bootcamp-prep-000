@@ -62,21 +62,7 @@ function total() {
 
 
 function removeFromCart(name) {
-    var tempCart = [...cart];
-    for(var i = 0; i< cart.length; i++){
-    var currentItemAndPrice = tempCart[i];
-    var item = Object.keys(currentItemAndPrice)[0];
-    if(name === item){
-      tempCart.splice(i,1);
-    }
-
-  }
-  if(cart.length === tempCart.length){
-    console.log('That item is not in your cart');
-  }else{
-    console.log(tempCart);
-  }
-
+    
 }
 
 function placeOrder(cardNumber) {
