@@ -29,17 +29,17 @@ function viewCart() {
       var price = currentItemAndPrice[item];
       // Handle commas & ands
       if(i && i < cart.length - 1) {
-        cartDescription += ', '
-        console.log(cartDescription)
+        cartDescription += ', ';
       } else if( i == cart.length - 1){
-        cartDescription += ' and '
+        cartDescription += ' and ';
       }
-      cartDescription += `${item} at ${price}`
+      cartDescription += `${item} at ${price}`;
     }
   }
-  console.log(cartDescription + ".");
+  return cartDescription + ".";
 
 }
+
 
 
 function total() {
