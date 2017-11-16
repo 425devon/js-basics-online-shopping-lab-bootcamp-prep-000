@@ -18,27 +18,34 @@ function addToCart(item) {
 
 }
 
-function viewCart() {
-  var cartDescription = 'In your cart, you have';
-  if(cart.length === 0){
-    console.log('Your shopping cart is empty.');
-  }else{
-    for(var i = 0; i < cart.length; i++){
-      var currentItemAndPrice = cart[i];
-      var item = Object.keys(currentItemAndPrice)[0];
-      var price = currentItemAndPrice[item];
-      // Handle commas & ands
-      if(i < cart.length - 1) {
-        cartDescription += ', ';
-      } else if( i < cart.length){
-        cartDescription += ' and ';
+ffunction viewCart() {
+  // write your code here
+  if (cart.length === 0) {
+    return console.log("Your shopping cart is empty.");
+  }
+
+  var string = "In your cart, you have ";
+
+  if (cart.length === 1) {
+    string += `${Object.keys(cart[0])} at $${cart[0][Object.keys(cart[0])]}.`
+  } else if (cart.length === 2) {
+    string += `${Object.keys(cart[0])} at $${cart[0][Object.keys(cart[0])]} and ${Object.keys(cart[1])} at $${cart[1][Object.keys(cart[1])]}.`
+  } else {
+    for (var i=0; i<cart.length; i++) {
+      var text;
+      if (i === cart.length - 2){
+          text = ", and ";
+      } else if (i === cart.length - 1) {
+          text = "";
+      } else {
+          text = ", ";
       }
-      cartDescription += `${item} at $${price}`;
+      string += `${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}` + text + `${i === cart.length - 1 ? '.' : ''}`;
     }
   }
-return console.log(cartDescription + ".");
 
-};
+  return console.log(string);
+}
 
 
 
