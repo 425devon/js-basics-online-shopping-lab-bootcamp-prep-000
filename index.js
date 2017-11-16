@@ -22,7 +22,7 @@ function viewCart() {
   var cartDescription = 'In your cart, you have ';
   if(cart.length === 0){
     console.log('Your shopping cart is empty.');
-/*  }else{
+  }else{
     for(var i = 0; i < cart.length; i++){
       var currentItemAndPrice = cart[i];
       var item = Object.keys(currentItemAndPrice)[0];
@@ -37,8 +37,8 @@ function viewCart() {
     }
   }
   console.log(cartDescription + ".");
-*/
-}}
+
+}
 
 
 function total() {
