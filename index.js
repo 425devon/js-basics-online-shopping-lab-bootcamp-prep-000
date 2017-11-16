@@ -19,9 +19,9 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var cartDescription = console.log('In your cart, you have ');
+  var cartDescription = 'In your cart, you have ';
   if(cart.length === 0){
-    return cartDescription;
+    console.log('Your shopping cart is empty.');
 /*  }else{
     for(var i = 0; i < cart.length; i++){
       var currentItemAndPrice = cart[i];
@@ -36,7 +36,7 @@ function viewCart() {
       cartDescription += `${item} at ${price}`
     }
   }
-  return cartDescription + "."
+  console.log(cartDescription + ".");
 */
 }}
 
