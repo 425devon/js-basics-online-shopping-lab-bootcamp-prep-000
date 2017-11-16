@@ -50,8 +50,16 @@ function viewCart() {
 
 
 function total() {
-  // write your code here
+  var total = 0;
+  for(var i = 0; i < cart.length; i++){
+    var currentObj = cart[i];
+    var key = Object.keys(currentObj)[0];
+    
+    total += currentObj[key];
+  }
+  return total;
 }
+
 
 function removeFromCart(item) {
   // write your code here
