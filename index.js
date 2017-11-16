@@ -62,8 +62,8 @@ function total() {
 
 
 function removeFromCart(name) {
-  var tempCart = [...cart];
-  for(var i = 0; i< cart.length; i++){
+    var tempCart = [...cart];
+    for(var i = 0; i< cart.length; i++){
     var currentItemAndPrice = tempCart[i];
     var item = Object.keys(currentItemAndPrice)[0];
     if(name === item){
